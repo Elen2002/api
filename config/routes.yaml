@@ -1,0 +1,27 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+loans_list:
+    path: /loans
+    controller: App\Controller\LoanController::index
+    methods: GET
+
+loans_create:
+    path: /loans
+    controller: App\Controller\LoanController::index
+    methods: POST
+
+loan_show:
+    path: /loans/{id}
+    controller: App\Controller\LoanController::change
+    methods: GET
+loan_edit:
+    path: /loans/{id}
+    controller: App\Controller\LoanController::change
+    methods: PUT
+loan_delete:
+        path: /loans/{id}
+        controller: App\Controller\LoanController::change
+        methods: DELETE
